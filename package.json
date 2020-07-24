@@ -1,8 +1,8 @@
 {
-	"name": "the-module",
+	"name": "term-pixel-size",
 	"version": "0.0.0",
-	"description": "My awesome module.",
-	"repository": "https://github.com/Richienb/the-module.git",
+	"description": "Get the size of the terminal in pixels.",
+	"repository": "https://github.com/Richienb/term-pixel-size.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
 	"license": "MIT",
 	"main": "index.js",
@@ -17,8 +17,15 @@
 		"lint": "xo",
 		"test": "xo && ava"
 	},
-	"keywords": [],
-	"dependencies": {},
+	"keywords": [
+		"terminal",
+		"pixel",
+		"size",
+		"width"
+	],
+	"dependencies": {
+		"replied": "^1.0.1"
+	},
 	"devDependencies": {
 		"ava": "^3.10.1",
 		"eslint-config-richienb": "^0.4.2",

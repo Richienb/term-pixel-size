@@ -1,41 +1,27 @@
-# the-module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# term-pixel-size [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/term-pixel-size/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/term-pixel-size)
 
-My awesome module.
+Get the size of the terminal in pixels.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/term-pixel-size.png)](https://npmjs.com/package/term-pixel-size)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install term-pixel-size
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const termPixelSize = require("term-pixel-size");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+(async () => {
+	const {width, height} = await termPixelSize()
+})();
 ```
 
 ## API
 
-### theModule(input, options?)
+### termPixelSize()
 
-#### input
-
-Type: `string`
-
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+Returns a promise that resolves with an object containing `width` and `height` properties
